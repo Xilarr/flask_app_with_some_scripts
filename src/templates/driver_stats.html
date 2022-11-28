@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+  driver statistics
+{% endblock %}
+{% block code %}
+  <table>
+    <tbody>
+      <tr>
+        <td>{{ driver_report.0 }}</td>
+        <td>{{ driver_report.1 }}</td>
+        <td>{{ driver_report.2 }}</td>
+        <td>{{ driver_report.3 }}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}
