@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      {% block title %}
+
+      {% endblock %}
+    </title>
+</head>
+<body>
+  <table>
+    <tbody>
+      <tr>
+        <td><button style="height:40px;width:120px"><a href="http://localhost:5000/report/">statistics</a></button></td>
+        <td><button style="height:40px;width:120px"><a href="http://localhost:5000/report/drivers/">drivers</a></button></td>
+        <td><button style="height:40px;width:120px"><a href="http://localhost:5000/report/drivers/?order=desc">desc</a></button></td>
+        <td><button style="height:40px;width:120px"><a href="http://localhost:5000/report/drivers/?order=asc">asc</a></button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+
+{% block code %}
+
+{% endblock %}
+</body>
+</html>

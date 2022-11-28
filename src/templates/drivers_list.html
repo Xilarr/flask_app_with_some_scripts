@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+
+{% endblock %}
+{% block code %}
+  <table>
+    <tbody>
+      {% for key in driver_keys %}
+        <tr>
+          <td><a href="{{ url_for('drivers_statistics') }}?driver_id={{ key }}">{{ key }}</a></td>
+          <td>{{ drivers_dict[key].0 }}</td>
+          <td>{{ drivers_dict[key].1 }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
